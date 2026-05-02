@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 👤 PROFILE HEADER -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 👤 Profile Icon -->
+            <TextView
+                android:text="👤"
+                android:textSize="32sp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- 👤 Name + Welcome -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:text="Welcome, User"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <TextView
+                    android:text="Have a productive day ✨"
+                    android:textSize="14sp"
+                    android:textColor="#777"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 📊 Stats Box -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="📊 Assignment Overview"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/totalTasks"
+                android:text="Total Assignments: 0"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/completedTasks"
+                android:text="Completed: 0"
+                android:textSize="16sp"
+                android:textColor="#4CAF50"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/pendingTasks"
+                android:text="Pending: 0"
+                android:textSize="16sp"
+                android:textColor="#F44336"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="100"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- 💡 Motivation Box -->
+        <LinearLayout
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/message"
+                android:text="📚 Start your tasks and stay productive!"
+                android:textSize="16sp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <!-- 🔘 Actions Box -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/goToAssignments"
+                android:text="📂 Manage Assignments"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- 👤 Profile Button -->
+            <Button
+                android:id="@+id/profileBtn"
+                android:text="👤 Profile"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:text="🚪 Logout"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E0E0E0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

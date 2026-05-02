@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignmenttracker">
+
+    <application
+        android:allowBackup="true"
+        android:label="Assignment Tracker"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 🔐 Login Page -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- 📝 Signup -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+
+        <!-- 📊 Dashboard -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- 🏠 Assignment Screen -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- 👤 Profile Screen -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
